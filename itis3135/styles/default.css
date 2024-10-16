@@ -1,0 +1,135 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Soft blue background */
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #06420d;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
+main {
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 900px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    color: #06420d;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+main p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #06420d;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer nav {
+    margin-top: 10px;
+}
+
+footer nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 1rem;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* HTML/CSS Validation Button Styling */
+footer a img {
+    margin: 10px 5px;
+    border: none;
+    vertical-align: middle;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    footer nav a {
+        margin: 0 8px;
+        font-size: 0.9rem;
+    }
+}
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figure img {
+    max-width: 100%;  /* Ensures the image will not exceed the width of the screen */
+    width: 250px;     /* You can adjust this value for a smaller or larger size */
+    height: auto;     /* Maintains the aspect ratio of the image */
+    border-radius: 10px; /* Optional: gives the image rounded corners */
+}
+
+figcaption {
+    font-style: italic;
+    text-align: center;
+    margin-top: 5px;
+    color: #333;
+}
+
