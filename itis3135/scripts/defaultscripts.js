@@ -1,4 +1,4 @@
-// Greet the user
+
 function greetUser() {
     const userName = document.getElementById("user-name").value;
     const userMood = document.getElementById("user-mood").value;
@@ -7,7 +7,6 @@ function greetUser() {
     document.getElementById("greeting-message").innerText = greetingMessage;
 }
 
-// Identify the polygon
 function identifyPolygon() {
     let favoriteNumber = parseFloat(document.getElementById("favorite-number").value);
     favoriteNumber = Math.abs(Math.round(favoriteNumber));
@@ -27,7 +26,7 @@ function identifyPolygon() {
     alert(`The polygon with ${favoriteNumber} sides is called ${polygonName}.`);
 }
 
-// Sunny Sparrow Service Functions
+
 function recommendDailyActivity() {
     const activities = [
         "Reading a storybook together",
@@ -88,7 +87,7 @@ function generateRandomChildActivity() {
     alert(`Here's a random activity: ${randomActivity}`);
 }
 
-// Display the current date and time
+
 function displayDateTime() {
     const now = new Date();
     const options = {
@@ -102,7 +101,7 @@ function displayDateTime() {
     document.getElementById("date-time").innerText = `Today is ${now.toLocaleDateString("en-US", options)}`;
 }
 
-// Attach event listeners to buttons
+
 function attachEventListeners() {
     document.getElementById("greet-btn").addEventListener("click", greetUser);
     document.getElementById("polygon-btn").addEventListener("click", identifyPolygon);
@@ -113,7 +112,7 @@ function attachEventListeners() {
     document.getElementById("random-btn").addEventListener("click", generateRandomChildActivity);
 }
 
-// Initialize the page
+
 window.onload = function initializePage() {
     displayDateTime();
     attachEventListeners();
