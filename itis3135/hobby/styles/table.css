@@ -1,0 +1,36 @@
+
+.table-container {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background-color: #202020;
+    color: #f4f4f4;
+  }
+  
+ 
+  .table-container caption {
+    font-weight: bold;
+    padding: 15px;
+    font-size: 1.5em;
+    color: #ffcc00;
+    text-transform: uppercase;
+  }
+  
+
+  .table-container thead tr {
+    background-color: #ff6600;
+    color: #fff;
+  }
+  
+
+  .table-container th {
+    padding: 12px;
+    border: 1px solid #333;
+  }
+  
+
+  .table-container td {
+    padding: 15px;
+    border: 1px solid #333;
+    text-align: center;
+  }
