@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunny Sparrow - First Scripts</title>
+    <script defer src="scripts/defaultscripts.js"></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <h1>Sunny Sparrow - First Scripts</h1>
+        <h3 id="date-time"></h3>
+
+        <section>
+            <h2>Welcome to Sunny Sparrow</h2>
+            <label for="user-name">Your Name:</label>
+            <input type="text" id="user-name" placeholder="Enter your name">
+            <label for="user-mood">How are you feeling today?</label>
+            <input type="text" id="user-mood" placeholder="Enter your mood">
+            <button id="greet-btn">Submit</button>
+            <h3 id="greeting-message"></h3>
+        </section>
+
+        <section>
+            <h2>Your Favorite Polygon</h2>
+            <label for="favorite-number">Enter Your Favorite Number:</label>
+            <input type="number" id="favorite-number" placeholder="Number (0-10)">
+            <button id="polygon-btn">Identify Polygon</button>
+        </section>
+
+        <section>
+            <h2>Sunny Sparrow Services</h2>
+            <button id="activity-btn">Recommend Daily Activity</button>
+            <button id="snack-btn">Suggest Healthy Snack</button>
+            <button id="quote-btn">Inspire with a Quote</button>
+            <button id="tip-btn">Share Daycare Tip</button>
+            <button id="random-btn">Random Child Activity</button>
+        </section>
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+        <script>
+            // Add validation links dynamically for current page
+            const htmlValidator = document.querySelector('#html-validator');
+            const cssValidator = document.querySelector('#css-validator');
+            if (htmlValidator && cssValidator) {
+                const currentURL = window.location.href;
+                htmlValidator.href = `https://validator.w3.org/check?uri=${encodeURIComponent(currentURL)}`;
+                cssValidator.href = `https://jigsaw.w3.org/css-validator/validator?uri=${encodeURIComponent(currentURL)}`;
+            }
+        </script>
+    </footer>
+    <script src="scripts/htmlinclude.js"></script>
+</body>
+</html>
