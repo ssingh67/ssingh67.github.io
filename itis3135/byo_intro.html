@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYO Intro Page</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script defer src="scripts/survey.js"></script>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <h2>BYO Intro Page</h2>
+        <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+
+        <form id="intro-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required><br>
+
+            <label for="mascot">Mascot:</label>
+            <input type="text" id="mascot" placeholder="Enter your mascot" required><br>
+
+            <label for="image">Image:</label>
+            <input type="file" id="image" accept=".png, .jpg" required><br>
+
+            <label for="image-caption">Image Caption:</label>
+            <input type="text" id="image-caption" placeholder="Enter a caption for your image" required><br>
+
+            <label for="personal-background">Personal Background:</label>
+            <textarea id="personal-background" placeholder="Enter your personal background" required></textarea><br>
+
+            <label for="professional-background">Professional Background:</label>
+            <textarea id="professional-background" placeholder="Enter your professional background" required></textarea><br>
+
+            <label for="academic-background">Academic Background:</label>
+            <textarea id="academic-background" placeholder="Enter your academic background" required></textarea><br>
+
+            <label for="web-background">Background in Web Development:</label>
+            <textarea id="web-background" placeholder="Enter your web development background" required></textarea><br>
+
+            <label for="platform">Primary Computer Platform:</label>
+            <input type="text" id="platform" placeholder="Enter your primary computer platform" required><br>
+
+            <label for="courses">Courses Currently Taking:</label>
+            <div id="courses-container">
+                <input type="text" class="course-input" placeholder="Enter course name">
+                <button type="button" id="add-course-btn">Add Course</button>
+            </div><br>
+
+            <label for="funny-thing">Funny Thing:</label>
+            <textarea id="funny-thing" placeholder="Enter something funny"></textarea><br>
+
+            <label for="anything-else">Anything Else?</label>
+            <textarea id="anything-else" placeholder="Enter anything else"></textarea><br>
+
+            <label>
+                <input type="checkbox" id="agree" required>
+                I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
+            </label><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/htmlinclude.js"></script>
+</body>
+</html>
